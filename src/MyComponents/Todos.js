@@ -6,7 +6,8 @@ export const Todos = (props) => {
   }
   return (
     <div className="container my-4" style={myStyle}>
-        <h3 className="my-2">Todos List</h3>
+      <h3 className="mb-5 text-center">Todos List</h3>
+      <div className="container-main d-flex flex-row ">
         {props.todos.length===0?"No todos to display": 
         props.todos.map((todo) =>{
               return (
@@ -16,6 +17,8 @@ export const Todos = (props) => {
               )
         })
          }
+      </div>
+       
         
     </div>
   )
